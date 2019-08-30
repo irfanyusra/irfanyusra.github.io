@@ -165,7 +165,7 @@ a.article:hover {
     right: 0;
 }
 
-#about,#skills,#education,#workExperience,#volExperience,#featProjects,#allProjects,#contact{
+#about,#skills,#education,#workExperience,#extraC,#featProjects,#allProjects,#achievements,#publications,#contact{
 padding: 40px;
 }
 #content.active {
@@ -395,6 +395,8 @@ padding-top: 25px;
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box; }
+
+
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label:after {
   content: '';
