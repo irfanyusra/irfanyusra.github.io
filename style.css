@@ -83,7 +83,7 @@ a:focus {
     padding: 10px;
 } */
 
-#sidebar ul li a {
+#sidebar ul li a , #sidebar ul li a{
     padding: 7px;
     font-size: 0.9em;
     display: block;
@@ -210,15 +210,108 @@ padding: 40px;
     left: 24px;
     top: 28.5%;
     letter-spacing: 50px;
-    margin-bottom: 70px;
+    margin-bottom: 10px;
      color: #383838;
 }
 
 .icon:hover {
-    color: #2ac3ae;
+    color: #7386D5;
 }
 
 .icon:active{
     color: #383838;
 }
 
+/* 
+.skill-mf span {
+  color: #4e4e4e;
+}
+
+.skill-mf .progress {
+  background-color: #cde1f8;
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #420042;
+} */
+
+.pull-right {
+    float: right;
+}
+
+
+.progress-wrap h3 {
+padding-top: 25px;
+  font-size: 16px;
+  font-family: "Quicksand", Arial, sans-serif;
+  margin-bottom: 10px; }
+
+.progress {
+  height: 6px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #f2f3f7;
+  overflow: visible; }
+
+.progress-bar {
+  background: #2c98f0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #000;
+  font-weight: 600;
+  text-align: right;
+  position: relative;
+  overflow: visible;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px; }
+  .progress-bar:after {
+    position: absolute;
+    top: -2px;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    content: '';
+    background: #2c98f0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%; }
+  .progress-bar span {
+    position: absolute;
+    top: -22px;
+    right: 0; }
+  .progress-bar.color-1,.progress-bar.color-1 span, .progress-bar.color-1:after {
+    background: #2c98f0; }
+    
+  .progress-bar.color-2,.progress-bar.color-2 span, .progress-bar.color-2:after {
+    background: #ec5453; }
+
+ .progress-bar.color-3,.progress-bar.color-3 span, .progress-bar.color-3:after {
+    background: #f9bf3f; }
+/*     
+  .progress-bar.color-4 {
+    background: #a84cb8; }
+    .progress-bar.color-4:after {
+      background: #a84cb8; }
+    .progress-bar.color-4 span {
+      color: #a84cb8; }
+  .progress-bar.color-5 {
+    background: #2fa499; }
+    .progress-bar.color-5:after {
+      background: #2fa499; }
+    .progress-bar.color-5 span {
+      color: #2fa499; }
+  .progress-bar.color-6 {
+    background: #4054b2; }
+    .progress-bar.color-6:after {
+      background: #4054b2; }
+    .progress-bar.color-6 span {
+      color: #4054b2; } */
