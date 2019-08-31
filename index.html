@@ -59,7 +59,9 @@ Might do the contact section cuznit used php
 	<div class="wrapper">
 		<!-- Sidebar  -->
 		<nav id="sidebar">
+                        
 			<div class="sidebar-header">
+               
 				<div class="author-img" style="background-image: url(images/about1.jpg);"></div>
 				<h3><a href="index.html">Yusra Irfan</a></h3>
 				<h10>
@@ -121,9 +123,10 @@ Might do the contact section cuznit used php
 		</nav>
 
 		<!-- Page Content  -->
-		<div id="content">
+		<div id="content" style="background: #e9ecef;" >
 			<section id="home">
-				
+                    <span style="font-size:30px;cursor:pointer;margin: 20px;background: #e9ecef;" onclick="toggleNav()">&#9776;</span>
+		
 				<div class="jumbotron jumbotron-fluid text-center">
 					<div class="container">
 						<h1 class="display-1">Hello! I am Yusra Irfan</h1>
@@ -1041,7 +1044,7 @@ Might do the contact section cuznit used php
 	<script
 		src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
-	<script type="text/javascript">
+	<script>
 		$(document).ready(function () {
 			$("#sidebar").mCustomScrollbar({
 				theme: "minimal"
@@ -1060,7 +1063,20 @@ Might do the contact section cuznit used php
 		});
 	</script>
 
-
+<script>
+    
+    function toggleNav() {
+            var sidebarW =  document.getElementById("sidebar").style.width;
+            var contentW = document.getElementById("content").style.width
+            if (sidebarW === "0px") {
+                document.getElementById("sidebar").style.width = "250px";
+                document.getElementById("content").style.width = "calc(100% - 250px)";
+            } else {
+                document.getElementById("sidebar").style.width = "0px";
+                document.getElementById("content").style.width = "100%";
+            }
+        }
+</script>
 </body>
 
 </html>
