@@ -40,6 +40,9 @@ Might do the contact section cuznit used php
 	<script
 		type="text/javascript"> (function () { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
 
+        <!--  --><script>
+         document.getElementById("toggleBtn").style.paddingLeft = "calc(100% + 50px)";
+        </script>
 	<!-- <link rel="stylesheet" href="animate.css"> -->
 	<!-- Font Awesome JS -->
 	<!-- <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
@@ -61,7 +64,7 @@ Might do the contact section cuznit used php
 		<nav id="sidebar">
                         
 			<div class="sidebar-header">
-               
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 				<div class="author-img" style="background-image: url(images/about1.jpg);"></div>
 				<h3><a href="index.html">Yusra Irfan</a></h3>
 				<h10>
@@ -123,10 +126,12 @@ Might do the contact section cuznit used php
 		</nav>
 
 		<!-- Page Content  -->
-		<div id="content" style="background: #e9ecef;" >
+        <div id="page" style="background: #e9ecef;" >
+        <div class="sticky" id="toggleBtn" style="padding-left: calc(100% + 50px)">
+            <span style="font-size:30px;cursor:pointer;margin: 20px;background: #e9ecef;" onclick="openNav()">&#9776;</span>
+        </div>
+<div id="content" style="background: #e9ecef;">
 			<section id="home">
-                    <span style="font-size:30px;cursor:pointer;margin: 20px;background: #e9ecef;" onclick="toggleNav()">&#9776;</span>
-		
 				<div class="jumbotron jumbotron-fluid text-center">
 					<div class="container">
 						<h1 class="display-1">Hello! I am Yusra Irfan</h1>
@@ -1023,8 +1028,10 @@ Might do the contact section cuznit used php
 					</div>
 				</footer>
 			</section>
-		</div>
-	</div>
+        </div>
+        </div>
+    </div>
+    
 
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -1065,17 +1072,21 @@ Might do the contact section cuznit used php
 
 <script>
     
-    function toggleNav() {
-            var sidebarW =  document.getElementById("sidebar").style.width;
-            var contentW = document.getElementById("content").style.width
-            if (sidebarW === "0px") {
+    function openNav() {
+           
                 document.getElementById("sidebar").style.width = "250px";
-                document.getElementById("content").style.width = "calc(100% - 250px)";
-            } else {
-                document.getElementById("sidebar").style.width = "0px";
-                document.getElementById("content").style.width = "100%";
-            }
+                document.getElementById("page").style.width = "calc(100% - 250px)";
+                document.getElementById("content").style.paddingLeft="0px";
+                document.getElementById("toggleBtn").style.paddingLeft = "calc(100% + 50px)";
         }
+        function closeNav() {
+                 document.getElementById("sidebar").style.width = "0px";
+            document.getElementById("page").style.width = "100%";
+             document.getElementById("content").style.paddingLeft = "30px";
+              document.getElementById("toggleBtn").style.paddingLeft = "0px";
+        
+            }
+
 </script>
 </body>
 

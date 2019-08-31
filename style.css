@@ -111,7 +111,7 @@ a.article:hover {
     CONTENT STYLE
 ----------------------------------------------------- */
 
-#content {
+#page {
     width: calc(100% - 250px);
     padding: 0px;
     min-height: 100vh;
@@ -770,4 +770,11 @@ margin: 20px;
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+}
+
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
