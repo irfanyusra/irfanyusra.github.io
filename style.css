@@ -128,21 +128,14 @@ ul ul a {
     background: #6d7fcc;
 }
 
-ul.CTAs {
-    padding: 20px;
-}
-
-ul.CTAs a {
-    text-align: center;
-    font-size: 0.9em !important;
-    display: block;
-    border-radius: 5px;
-    margin-bottom: 5px;
-}
-
-a.download {
-    background: #fff;
-    color: #7386D5;
+.download {
+    background: #fff!important;
+    color: #7386D5!important;
+    border-radius: 0.25rem;
+  border: 1px solid transparent;
+  line-height: 1.5; 
+    border:transparent;
+    padding: .375rem .75rem;
 }
 
 a.article,
@@ -166,7 +159,7 @@ a.article:hover {
 }
 
 #about,#skills,#ides,#tools,#systems,#education,#workExperience,#extraC,#featProjects,#allProjects,#achievements,#publications,#contact{
-padding: 40px;
+padding: 30px;
 }
 #content.active {
     width: 100%;
@@ -207,9 +200,9 @@ padding: 40px;
 
 .icons{
     position: relative;
-    left: 24px;
+    left: 10px;
     top: 28.5%;
-    letter-spacing: 50px;
+    letter-spacing: 10px;
     margin-bottom: 10px;
      color: #383838;
 }
@@ -220,6 +213,10 @@ padding: 40px;
 
 .icon:active{
     color: #383838;
+}
+
+.icon1:hover {
+    color:#383838;
 }
 
 /* 
@@ -480,11 +477,14 @@ footer .credits a {
   color: #420042;
 }
 
+
+
+
 #ides .card, #systems .card, #tools .card{
     background:#7386D5;
 text-align: center; 
 color: white;
-margin: 10px;
+margin: 20px;
 }
 #ides .card .card-title,#systems .card .card-title,#tools .card .card-title{
      font-size: 16px;
