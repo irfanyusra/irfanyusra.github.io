@@ -165,7 +165,7 @@ a.article:hover {
     right: 0;
 }
 
-#about,#skills,#education,#workExperience,#extraC,#featProjects,#allProjects,#achievements,#publications,#contact{
+#about,#skills,#ides,#tools,#systems,#education,#workExperience,#extraC,#featProjects,#allProjects,#achievements,#publications,#contact{
 padding: 40px;
 }
 #content.active {
