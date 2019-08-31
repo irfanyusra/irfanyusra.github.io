@@ -241,6 +241,7 @@ padding: 40px;
 
 .pull-right {
     float: right;
+    opacity: .7;
 }
 
 
@@ -423,11 +424,8 @@ padding-top: 25px;
   color: #000; }
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 span {
-  -webkit-opacity: .4;
-  -moz-opacity: .4;
-  opacity: .4;
-  -ms-filter: alpha(opacity=40);
-  filter: alpha(opacity=40);
+  
+  opacity: .7;
   font-size: 16px; }
 
   .ico-circle {
@@ -457,4 +455,39 @@ padding-top: 25px;
   text-align: center;
   box-shadow: 0 0 0 10px #420042;
   display: block;
+}
+
+
+/*======================================
+//--//-->   FOOTER
+======================================*/
+
+footer {
+  text-align: center;
+  color: #420042;
+  padding-bottom: 0rem;
+}
+
+footer .copyright {
+  margin-bottom: .3rem;
+}
+
+footer .credits {
+  margin-bottom: 0;
+}
+
+footer .credits a {
+  color: #420042;
+}
+
+#ides .card, #systems .card, #tools .card{
+    background:#7386D5;
+text-align: center; 
+color: white;
+margin: 10px;
+}
+#ides .card .card-title,#systems .card .card-title,#tools .card .card-title{
+     font-size: 16px;
+  font-family: "Quicksand", Arial, sans-serif;
+    margin: 8px ;
 }
