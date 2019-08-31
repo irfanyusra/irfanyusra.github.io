@@ -2,13 +2,15 @@
 <html>
 <!-- Add hackathons Eventually-->
 <!--featured projects 
-	-hover over projects and it shows git link or preview 
+	-hover over projects and it shows preview link
 	Figure out how to run the Java files
 	Think about toggle bar if using a small device  -->
 <!-- load more for projects and languages? 
 Click u go the GitHub but hover gives a choice 
 Animate the progress bar and everything else 
 Slide show for projects? 
+
+shouldnt be able to scroll left right? or find an actual way to remove the toggle... i can make it not stick and change the color?
 
 Might do the contact section cuznit used php
  -->
@@ -127,7 +129,8 @@ Might do the contact section cuznit used php
 
 		<!-- Page Content  -->
         <div id="page" style="background: #e9ecef;" >
-        <div class="sticky" id="toggleBtn" style="padding-left: calc(100% + 50px)">
+        <div class="sticky" id="toggleBtn">
+        
             <span style="font-size:30px;cursor:pointer;margin: 20px;background: #e9ecef;" onclick="openNav()">&#9776;</span>
         </div>
 <div id="content" style="background: #e9ecef;">
@@ -1077,14 +1080,14 @@ Might do the contact section cuznit used php
                 document.getElementById("sidebar").style.width = "250px";
                 document.getElementById("page").style.width = "calc(100% - 250px)";
                 document.getElementById("content").style.paddingLeft="0px";
-                document.getElementById("toggleBtn").style.paddingLeft = "calc(100% + 50px)";
+              
+                document.getElementById("toggleBtn").style.position="sticky";
         }
         function closeNav() {
                  document.getElementById("sidebar").style.width = "0px";
             document.getElementById("page").style.width = "100%";
              document.getElementById("content").style.paddingLeft = "30px";
-              document.getElementById("toggleBtn").style.paddingLeft = "0px";
-        
+             document.getElementById("toggleBtn").style.position = "fixed";
             }
 
 </script>
