@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html>
-<!-- Add hackathons Eventually-->
-<!--featured projects 
-	-hover over projects and it shows preview link
-	Figure out how to run the Java files
-	Think about toggle bar if using a small device  -->
-<!-- load more for projects and languages? 
-Click u go the GitHub but hover gives a choice 
-Animate the progress bar and everything else 
-Slide show for projects? 
 
-shouldnt be able to scroll left right? or find an actual way to remove the toggle... i can make it not stick and change the color?
+<!--
+	- add all the feat projectss
+	- change the pic
+	- get a home page pic 
+	- change the color theme 
+	- change the fonts 
+	-hover over projects and it shows preview link as well when i Figure out how to run the Java files
+- hover over the work experience and the information flips 
 
-Might do the contact section cuznit used php
+	
+- hover over the whole card instead of hovering over just the pic
+- Animate the progress bar and everything else 
+
+
+
  -->
+
+<!--just extras
+	Add hackathons Eventually
+ contact section cuz it used php
+ load more for projects (it can go to the all projects if i even do it) and languages? 
+Slide show for projects? 
+-->
 
 <head>
 	<!-- Required meta tags -->
@@ -76,28 +86,29 @@ Might do the contact section cuznit used php
 
 			<ul class="list-unstyled components">
 
-				<li class="active"> <a href="#home">Home</a></li>
+				<li> <a href="#home">Home</a></li>
 				<li> <a href="#about">About</a> </li>
 				<li>
 					<!-- <a href="#skills">Skills</a>  -->
 					<a href="#skillsSubmenu" data-toggle="collapse" aria-expanded="false"
-						class="dropdown-toggle">Skills</a>
+						class="dropdown-toggle">SKILLS</a>
 					<ul class="collapse list-unstyled" id="skillsSubmenu">
 						<li><a href="#skills">Programming Languages</a> </li>
-						<li> <a href="#ides">IDEs</a></li>
-						<li> <a href="#systems">Systems</a></li>
+						<!-- <li> <a href="#ides">IDEs</a></li>
+						<li> <a href="#systems">Systems</a></li> -->
 						<li> <a href="#tools">Other Tools</a></li>
 					</ul>
 				</li>
 				<li> <a href="#education">Education</a> </li>
 				<li> <a href="#workExperience">Work Experience</a> </li>
 				<li>
-					<a href="#projectsSubmenu" data-toggle="collapse" aria-expanded="false"
+					<a href="#featProjects">Featured Projects</a>
+					<!-- <a href="#projectsSubmenu" data-toggle="collapse" aria-expanded="false"
 						class="dropdown-toggle">Projects</a>
 					<ul class="collapse list-unstyled" id="projectsSubmenu">
 						<li> <a href="#featProjects">Featured Projects</a></li>
 						<li> <a href="#allProjects">All Projects</a></li>
-					</ul>
+					</ul> -->
 				</li>
 				<li> <a href="#extraC">EXTRA-CURRICULARS</a> </li>
 				<li> <a href="#publications">Publications</a> </li>
@@ -128,15 +139,15 @@ Might do the contact section cuznit used php
 		</nav>
 
 		<!-- Page Content  -->
-		<div id="page" style="background: #e9ecef;">
+		<div id="page">
 			<div class="sticky" id="toggleBtn">
 
-				<span style="font-size:30px;cursor:pointer;margin: 20px;background: #e9ecef; "
-					onclick="openNav()">&#9776;</span>
+				<span style="font-size:30px;cursor:pointer;margin: 10px; "
+					onclick="openNav()">&#9776;</span> <!-- background: #e9ecef; -->
 			</div>
 			<div id="content" style="background: #e9ecef;">
 				<section id="home">
-					<div class="jumbotron jumbotron-fluid text-center">
+					<div class="jumbotron jumbotron-fluid text-center" style="background:#7386D5">
 						<div class="container">
 							<h1 class="display-1">Hello! I am Yusra Irfan</h1>
 							<p class="lead">Software Engineering Student</p>
@@ -181,7 +192,7 @@ Might do the contact section cuznit used php
 
 				<div class="line"></div>
 				<section id="skills">
-					<h2>Skills</h2>
+					<h2>SKILLS</h2>
 					<br>
 					<h4>Programming Languages</h4>
 					<div class="skill-mf">
@@ -369,10 +380,46 @@ Might do the contact section cuznit used php
 					</div>
 				</section>
 
-				<section id="ides">
-					<br>
-					<h4>IDEs</h4>
-					<div class="container">
+<!-- 
+				<section id="otherSkills">
+					<div class="row">
+
+						<div class="col-md-3 animate-box"id="ides" data-animate-effect="fadeInLeft" >
+							<h4 style="text-align: center">IDEs</h4>
+								<div class="card">
+									<h3 class="card-title">Eclipse</h3>
+								</div>
+									<div class="card">
+										<h3 class="card-title">Eclipse</h3>
+									</div>
+										<div class="card">
+											<h3 class="card-title">Eclipse</h3>
+										</div>
+											<div class="card">
+												<h3 class="card-title">Eclipse</h3>
+											</div>
+
+						</div>
+
+<div class="col-md-1 animate-box">
+
+</div>
+
+						<div class="col-md-4 animate-box" id="systems" data-animate-effect="fadeInLeft">
+							<h4>System</h4>
+
+						</div>
+
+						<div class="col-md-4 animate-box" id="tools" data-animate-effect="fadeInLeft">
+							<h4>Other Tools</h4>
+
+						</div>
+
+					</div> 
+				</section>-->
+				<!-- <br> -->
+
+				<!-- <div class="container">
 						<div class="row">
 							<div class="card col-sm-2">
 								<div class="card-block">
@@ -415,10 +462,10 @@ Might do the contact section cuznit used php
 								</div>
 							</div>
 						</div>
-					</div>
-				</section>
+					</div> -->
+				<!-- </section> -->
 
-				<section id="systems">
+				<!-- <section id="systems">
 					<br>
 					<h4>Systems</h4>
 					<div class="container">
@@ -441,44 +488,44 @@ Might do the contact section cuznit used php
 						</div>
 					</div>
 				</section>
-
+			-->
 				<section id="tools">
 					<br>
 					<h4>Other Tools</h4>
 					<div class="container">
 						<div class="row">
-							<div class="card col-sm-2">
+							<div class="card col-xs-12 col-sm-5 col-md-4 col-lg-2">
 								<div class="card-block">
 									<h3 class="card-title">Git</h3>
 								</div>
 							</div>
-							<div class="card col-sm-2">
+							<div class="card col-xs-12 col-sm-5 col-md-4 col-lg-2">
 								<div class="card-block">
 									<h3 class="card-title">SVN</h3>
 								</div>
 							</div>
-							<div class="card col-sm-2">
+							<div class="card col-xs-12 col-sm-5 col-md-4 col-lg-2">
 								<div class="card-block">
 									<h3 class="card-title">Scene Builder</h3>
 								</div>
 							</div>
-							<div class="card col-sm-2">
+							<div class="card col-xs-12 col-sm-5 col-md-4 col-lg-2">
 								<div class="card-block">
 									<h3 class="card-title">Terminal</h3>
 								</div>
 							</div>
-							<div class="card col-sm-2">
+							<div class="card col-xs-12 col-sm-5 col-md-4 col-lg-2">
 								<div class="card-block">
 									<h3 class="card-title">OnShape</h3>
 								</div>
 							</div>
 						</div>
 					</div>
-				</section>
+				</section> 
 
 				<div class="line"></div>
 				<section id="education">
-					<h2>Education</h2>
+					<h2>EDUCATION</h2>
 					<div class="row">
 						<div class="timeline-centered">
 							<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
@@ -563,7 +610,7 @@ Might do the contact section cuznit used php
 
 				<div class="line"></div>
 				<section id="workExperience">
-					<h3>Work Experience</h3>
+					<h3>WORK EXPERIENCE</h3>
 					<div class="row">
 						<div class="timeline-centered">
 							<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
@@ -661,21 +708,20 @@ Might do the contact section cuznit used php
 
 				<div class="line"></div>
 				<section id="featProjects">
-					<h3>Fetured Projects</h3>
-					<p>i can make all of them rounded and put links anywhere. I can also change the size of any card or
-						picture </p>
+					<h3>FEATURED PROJECTS</h3>
+					<br>
 
 					<div class="row">
-						<div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
+						<div class="col-md-6 col-lg-4 animate-box" data-animate-effect="fadeInLeft">
 							<div class="project"
-								style=" background-image: url(images/driveAlertNamed.png); border-radius: 10%;"
-								href="https://github.com/irfanyusra" target="_blank">
+								style=" background-image: url(images/driveAlertNamed.png); border-radius: 5%;"
+								href="https://github.com/hadeelelmadhoon/DriveAlert" target="_blank">
 								<div class="desc">
 
 									<div class="con">
-										<h3><a href="https://github.com/irfanyusra" target="_blank">Drive Alert</a></h3>
+										<h3><a href="https://github.com/hadeelelmadhoon/DriveAlert" target="_blank">Drive Alert</a></h3>
 										<span style="opacity: 0.7; color: white;">IOS App</span>
-										<p style="word-wrap: break-word">face tracking IOS app using ARKit that alerts
+										<p style="word-wrap: break-word">Face tracking IOS app using ARKit that alerts
 											drivers when they get drowsy at the wheel
 											with 99%
 											accuracy. Using control flow in Swift, an alarm is triggered if user has had
@@ -684,11 +730,10 @@ Might do the contact section cuznit used php
 											more than two seconds.
 										</p>
 										<p class="icon">
-											<!-- <span><a href="#"><i class="i"></i></a></span> -->
-											<span> <a class="icon1" href="https://github.com/irfanyusra" target="_blank"
+											<span> <a class="icon1" href="https://github.com/hadeelelmadhoon/DriveAlert" target="_blank"
 													data-toggle="tooltip" title="GitHub"><i
 														class="fab fa-github"></i></a>
-												<a class="icon1" href="https://devpost.com/irfanyusra" target="_blank"
+												<a class="icon1" href="https://devpost.com/software/drivealert-80wnxk" target="_blank"
 													data-toggle="tooltip" title="DevPost"><i class="fab fa-dev"></i></a>
 										</p>
 									</div>
@@ -696,7 +741,79 @@ Might do the contact section cuznit used php
 							</div>
 						</div>
 
-						<div class="project-box col-lg-4 wow fadeInUp">
+						<div class="col-md-6 col-lg-4 animate-box" data-animate-effect="fadeInLeft">
+							<div class="project"
+								style=" background-image: url(images/YAPShooterNamed.png); border-radius: 5%;"
+								href="https://github.com/irfanyusra/YAP-Shooter" target="_blank">
+								<div class="desc">
+
+									<div class="con">
+										<h3><a href="https://github.com/irfanyusra/YAP-Shooter" target="_blank">YAP Shooter (SHUMP)</a></h3>
+										<span style="opacity: 0.7; color: white;">Unity</span>
+										<p style="word-wrap: break-word">
+											Shoot em up game in space
+										</p>
+										<p class="icon">
+											<span> <a class="icon1" href="https://github.com/irfanyusra" target="_blank"
+													data-toggle="tooltip" title="GitHub"><i
+														class="fab fa-github"></i></a>
+														<a class="icon1" href="https://www.youtube.com/watch?v=-bbrtsu4EcA&feature=youtu.be" target="_blank" data-toggle="tooltip" title="YouTube Demo"><i
+																class="fab fa-youtube"></i></a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-lg-4 animate-box" data-animate-effect="fadeInLeft">
+							<div class="project"
+								style=" background-image: url(images/iTravel2Named.png); border-radius: 5%;"
+								href="https://github.com/irfanyusra/iTravel" target="_blank">
+								<div class="desc">
+
+									<div class="con">
+										<h3><a href="https://github.com/irfanyusra/iTravel" target="_blank" >iTravel</a></h3>
+										<span style="opacity: 0.7; color: white;"></span>
+										<p style="word-wrap: break-word">
+											Database for an airline 'iTravel'. GUI developed using Java and JavaFX using object oriented programming principles with a functional
+											database created using SQL for employees to receive and store passenger/flight information.
+										</p>
+										<p class="icon">
+											<span> <a class="icon1" href="https://github.com/irfanyusraiTravel" target="_blank"
+													data-toggle="tooltip" title="GitHub"><i
+														class="fab fa-github"></i></a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-lg-4 animate-box" data-animate-effect="fadeInLeft">
+							<div class="project"
+								style=" background-image: url(images/GetRollin.png); border-radius: 5%;"
+								href="https://github.com/irfanyusra" target="_blank">
+								<div class="desc">
+
+									<div class="con">
+										<h3><a href="https://github.com/irfanyusra" target="_blank">Get Rollin'</a></h3>
+										<span style="opacity: 0.7; color: white;">Android App</span>
+										<p style="word-wrap: break-word">Application which helps individuals with paraplegia locates places where they can find accessible activities along with their ratings. The main
+										features were decided upon to maximize the quality of experience of the user.
+										</p>
+										<p class="icon">
+											<span> <a class="icon1" href="https://github.com/irfanyusra" target="_blank"
+													data-toggle="tooltip" title="GitHub"><i
+														class="fab fa-github"></i></a>
+												<a class="icon1" href="GetRollinReport.pdf" target="_blank"
+													data-toggle="tooltip" title="Report"><i class="fas fa-file-pdf"></i></a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<!-- <div class="project-box col-lg-4 wow fadeInUp">
 							<div class="project1">
 								<img href="https://github.com/irfanyusra" target="_blank"
 									class="project-image shadow-1 zoom" src="images/driveAlert.png"
@@ -718,7 +835,7 @@ Might do the contact section cuznit used php
 
 								</div>
 							</div>
-							<!-- </a> -->
+					
 							<h4 class="project-title"><a href="https://github.com/irfanyusra"
 									target="_blank">DriveAlert</a></h4>
 							<p>A face tracking IOS app using ARKit that alerts drivers when they get drowsy at the wheel
@@ -728,15 +845,13 @@ Might do the contact section cuznit used php
 								more than two seconds.</p>
 
 						</div>
+ -->
 
-
-						<div class="project-box col-lg-4 wow fadeInUp">
-							<!-- style="visibility:visible; animation-name: fadeInUp;" -->
+						<!-- <div class="project-box col-lg-4 wow fadeInUp">
 							<a href="https://github.com/hadeelelmadhoon/DriveAlert" target="_blank">
 								<img class="project-image shadow-1 zoom" src="images/driveAlert.png"
 									alt="drivealert-logo"></a>
 
-							<!-- </a> -->
 							<h4 class="project-title"><a href="https://github.com/irfanyusra"
 									target="_blank">DriveAlert</a></h4>
 							<p>A face tracking IOS app using ARKit that alerts drivers when they get drowsy at the wheel
@@ -782,11 +897,11 @@ Might do the contact section cuznit used php
 									</div>
 								</div>
 							</a>
-						</div>
+						</div> -->
 
 
 						<!--shadow-->
-						<div class="col-md-4 aos-init" data-aos="fade-up" data-aos-offset="10" data-aos-duration="500" style="background: white; padding:0px;">
+						<!-- <div class="col-md-4 aos-init" data-aos="fade-up" data-aos-offset="10" data-aos-duration="500" style="background: white; padding:0px;">
 							<a href="https://github.com/hadeelelmadhoon/DriveAlert" target="_blank">
 								<div class="work-box project2">
 									<img src="images/driveAlert.png" alt="" class="img-fluid"
@@ -826,7 +941,7 @@ Might do the contact section cuznit used php
 									</div>
 								</div>
 							</a>
-						</div>
+						</div> -->
 
 
 					</div>
@@ -834,7 +949,7 @@ Might do the contact section cuznit used php
 
 				<div class="line"></div>
 				<section id="extraC">
-					<h3>Extra-Curriculars</h3>
+					<h3>EXTRA-CURRICULARS</h3>
 					<div class="row">
 						<div class="timeline-centered">
 							<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
@@ -924,7 +1039,7 @@ Might do the contact section cuznit used php
 
 				<div class="line"></div>
 				<section id="publications">
-					<h3>Publications</h3>
+					<h3>PUBLICATIONS</h3>
 					<div class="row">
 						<div class="timeline-centered">
 							<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
@@ -988,7 +1103,7 @@ Might do the contact section cuznit used php
 
 				<div class="line"></div>
 				<section id="achievements">
-					<h3>Achievements</h3>
+					<h3>ACHIEVEMENTS</h3>
 					<div class="row">
 						<div class="timeline-centered">
 							<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
@@ -1103,7 +1218,8 @@ Might do the contact section cuznit used php
 				<section>
 					<footer>
 						<div class="jumbotron jumbotron-fluid text-center"
-							style="margin-bottom:0px; padding-bottom: 2em;  padding-top: 2em">
+							style="margin-bottom:0px; padding-bottom: 2em;  padding-top: 2em; ">
+							<!-- background: purple -->
 
 							<div class="container">
 								<div class="row">
@@ -1169,14 +1285,19 @@ Might do the contact section cuznit used php
 			document.getElementById("sidebar").style.width = "250px";
 			document.getElementById("page").style.width = "calc(100% - 250px)";
 			document.getElementById("content").style.paddingLeft = "0px";
-			document.getElementById("toggleBtn").style.color = "#e9ecef";
+			// document.getElementById("toggleBtn").style.color = "#e9ecef";
+			document.getElementById("toggleBtn").style.color = "white";
+			
 			document.getElementById("toggleBtn").style.position = "sticky";
+			document.getElementById("home").style.paddingLeft = "0px";
 		}
 		function closeNav() {
 			document.getElementById("sidebar").style.width = "0px";
 			document.getElementById("page").style.width = "100%";
 			document.getElementById("content").style.paddingLeft = "30px";
 			document.getElementById("toggleBtn").style.position = "fixed";
+	document.getElementById("home").style.paddingLeft="15px";
+
 			document.getElementById("toggleBtn").style.color = "black";
 		}
 

@@ -121,7 +121,7 @@ a.article:hover {
     right: 0;
 }
 
-#about,#skills,#ides,#tools,#systems,#education,#workExperience,#extraC,#featProjects,#allProjects,#achievements,#publications,#contact{
+#about,#skills,#tools,#education,#workExperience,#extraC,#featProjects,#allProjects,#achievements,#publications,#contact{
 padding: 30px;
 }
 
@@ -398,6 +398,7 @@ padding: 30px;
     font-size: 20px;
     font-family: "Quicksand", Arial, sans-serif;
     font-weight: 500;
+    
 }
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 a {
@@ -463,11 +464,11 @@ footer .credits a {
 
 
 
-#ides .card, #systems .card, #tools .card{
+/* #ides .card, #systems .card,  */#tools .card{
     background:#7386D5;
 text-align: center; 
 color: white;
-margin: 20px;
+margin: 10px;
 }
 #ides .card .card-title,#systems .card .card-title,#tools .card .card-title{
      font-size: 16px;
@@ -487,6 +488,7 @@ margin: 20px;
   width: 100%;
   display: block;
   margin-bottom: 30px; 
+ 
 }
   .project .desc {
     position: absolute;
@@ -497,7 +499,7 @@ margin: 20px;
     background: #7386D5;
     opacity: 0;
     transition: 0.3s;
-    border-radius: 10%;
+    border-radius: 5%;
  }
     .project .desc .con {
       padding: 20px;
@@ -521,7 +523,7 @@ margin: 20px;
       font-family: "Quicksand", Arial, sans-serif;
       font-size: 16px;
       font-weight: 500;
-      text-transform: uppercase;
+      /* text-transform: uppercase; */
       letter-spacing: 1px;
         transition: transform 0.3s, opacity 0.3s;
       transform: translate3d(0, -15px, 0);
@@ -579,7 +581,7 @@ margin: 20px;
 }
 
 .project-image{
-    border-radius: 15%;
+    /* border-radius: 5%; */
     max-width: 10em;
     display: block;
     margin: 0 auto;
@@ -697,7 +699,7 @@ margin: 20px;
     bottom: 0;
     left: 0;
     right: 0;
-    background: #7386D5;
+    background: rgb(240, 3, 3);
     opacity: 0;
      border-radius: 15%;
     transition: 0.3s;
@@ -759,7 +761,7 @@ margin: 20px;
         .project .desc span {
           -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0); } } */
-  .project1:hover .desc {
+  .project1:hover .desc,.project-box {
     opacity: 1; }
     .project1:hover .desc h3 {
       transform: translate3d(0, 0, 0); }
