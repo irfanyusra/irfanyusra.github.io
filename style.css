@@ -1,6 +1,11 @@
 
 /* @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"; */
 
+p{
+   /* font-family: "Quicksand", Arial, sans-serif;  */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+
+}
 
 a,
 a:hover,
@@ -36,7 +41,7 @@ a:focus {
     /* background: rgb(217,187,221); */
     /* color: #fff; */
     /* color: rgba(0, 0, 0, 0.7); */
-    font-family: "Quicksand", Arial, sans-serif;
+    /* font-family: "Quicksand", Arial, sans-serif; */
     font-size: 14px;
     transition: all 0.3s;
     text-align: center;
@@ -52,11 +57,7 @@ a:focus {
      /* color:blue; */
 }
 
-#sidebar ul.components {
-    padding: 20px 0;
-    padding-bottom: 0px;
-    /* border-bottom: 1px solid #47748b; */
-}
+
 
 #sidebar ul li a , #sidebar ul li a{
     padding: 7px;
@@ -108,7 +109,7 @@ a[data-toggle="collapse"] {
 }
 
 ul ul a {
-    font-size: 0.75em !important;
+    /* font-size: 0.75em !important; */
     padding-left: 30px !important;
      /* background: rgb(239,240,238); */
     /* background: #6d7fcc; */
@@ -217,7 +218,7 @@ padding: 30px;
 
 .pull-right {
     float: right;
-    opacity: .7;
+    opacity: .9;
 }
 
 .progress-wrap h3 {
