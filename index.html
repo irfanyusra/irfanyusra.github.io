@@ -2,6 +2,7 @@
 <html>
 
 <!--
+	#4f81bd
 	- add all the feat projectss
 	- change the pic
 	- get a home page pic 
@@ -44,31 +45,28 @@ Slide show for projects?
 	<!--Font Awesome-->
 	<script src="https://kit.fontawesome.com/36133dea0d.js"></script>
 
+<!-- Animate CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+
 	<script
 		type="text/javascript"> (function () { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
-	<!-- 
-        <script>
-         document.getElementById("toggleBtn").style.paddingLeft = "calc(100% + 50px)";
-        </script> -->
-	<!-- <link rel="stylesheet" href="animate.css"> -->
-	<!-- Font Awesome JS -->
-	<!-- <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
-		integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
-		crossorigin="anonymous"></script>
-	<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
-		integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
-		crossorigin="anonymous"></script>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-
-
+		<!-- Wow.js -->
+		<script type="text/javascript" src="wow.min.js"></script>
+		
+		<script>
+			new WOW().init();
+		</script>
 </head>
 
 <body>
 
+	<p style="background: rgb(162,175,165)"> test</p>
+	<p style="background: rgb(189,199,191)"> test</p>
+	<p style="background: rgb(214,217,210)"> test</p>
 	<div class="wrapper">
 		<!-- Sidebar  -->
-		<nav id="sidebar">
+		<nav id="sidebar" style="background:  #f2f3f7 	"> <!-- rgb(162,175,165) --> <!-- #f2f3f7 -->
 
 			<div class="sidebar-header">
 				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -109,7 +107,7 @@ Slide show for projects?
 				<li> <a href="#publications">Publications</a> </li>
 				<li> <a href="#achievements">Achievements</a> </li>
 			</ul>
-			<div class="icons" style="color: white">
+			<div class="icons">
 				<a class="icon1" href="https://github.com/irfanyusra" target="_blank" data-toggle="tooltip"
 					title="GitHub"><i class="fab fa-github"></i></a>
 				<a class="icon1" href="https://ca.linkedin.com/in/irfanyusra" target="_blank" data-toggle="tooltip"
@@ -122,7 +120,7 @@ Slide show for projects?
 						class="fas fa-envelope"></i></a>
 			</div>
 			<a href="mailto:yirfan3@uwo.ca">
-				<p>yirfan3@uwo.ca</p></i>
+				<p style="color: #4f81bd; font-size: 16px">yirfan3@uwo.ca</p></i>
 			</a>
 			<br>
 			<a href="YusraIrfanResume.pdf" target="_blank" class="btn btn-secondary btn-md active download"
@@ -134,16 +132,16 @@ Slide show for projects?
 		</nav>
 
 		<!-- Page Content  -->
-		<div id="page">
-			<div class="sticky" id="toggleBtn">
-
+		<div id="page" style="background: white"> <!-- rgb(214,217,210) -->
+			<div class="sticky" id="toggleBtn" style ="background:white ;color:white"> <!-- color: #e9ecef; -->
+ 
 				<span style="font-size:30px;cursor:pointer;margin: 10px; "
 					onclick="openNav()">&#9776;</span> <!-- background: #e9ecef; -->
 			</div>
-			<div id="content" style="background: #e9ecef;">
+			<div id="content" > <!-- /* #e9ecef;"> */ --> <!-- style="background: rgb(222,237,236) ; " --> <!-- style="background: rgb(222,237,236) ; -->
 				<section id="home">
 					<div class="jumbotron jumbotron-fluid text-center">
- <!-- style="background:#7386D5" -->						<div class="container">
+ 						<div class="container">
 							<h1 class="display-1">Hello! I am Yusra Irfan</h1>
 							<p class="lead">Software Engineering Student</p>
 							<br>
@@ -174,7 +172,9 @@ Slide show for projects?
 						I am an enthusiastic candidate for Bachelor of Engineering Science who admires Technology. I am specializing in Software
 						Engineering. I am a driven programmer with experience in various programming languages and excited to learn more. I use
 						my leadership skills, developed from my working and volunteer experience, to drive my current projects to success.
-						I am currently working on projects related to Elliptic Curve Cryptography and mobile app development. 
+						I have experience in developing web and mobile applications, games, and parrallel scheduling using GoLang. 
+						These experiences were gathered from classes, internships, and by attending hackathons.
+						<!-- I am currently working on projects related to Elliptic Curve Cryptography and mobile app development.  -->
 					</p>
 				</section>
 
@@ -186,7 +186,7 @@ Slide show for projects?
 					<div class="skill-mf">
 						<div class="row">
 							<!-- Proficient -->
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="col-md-6 wow fadeInLeft">
 								<div class="progress-wrap">
 									<h3>Java<span class="pull-right">Proficient</span></h3>
 									<div class="progress">
@@ -197,7 +197,7 @@ Slide show for projects?
 								</div>
 							</div>
 
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="col-md-6 wow fadeInRight">
 								<div class="progress-wrap">
 									<h3>C++<span class="pull-right">Proficient</span></h3>
 									<div class="progress">
@@ -209,7 +209,7 @@ Slide show for projects?
 							</div>
 
 							<!--Competent-->
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="col-md-6 wow fadeInLeft" >
 								<div class="progress-wrap">
 									<h3>Haskell<span class="pull-right">Competent</span></h3>
 									<div class="progress">
@@ -220,7 +220,7 @@ Slide show for projects?
 								</div>
 							</div>
 
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="col-md-6 wow fadeInRight">
 								<div class="progress-wrap">
 									<h3>GOLang<span class="pull-right">Competent</span></h3>
 									<div class="progress">
@@ -231,7 +231,7 @@ Slide show for projects?
 								</div>
 							</div>
 
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="col-md-6 wow fadeInLeft">
 								<div class="progress-wrap">
 									<h3>HTML/CSS and Bootstrap<span class="pull-right">Competent</span></h3>
 									<div class="progress">
@@ -242,7 +242,7 @@ Slide show for projects?
 								</div>
 							</div>
 
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="col-md-6 wow fadeInRight">
 								<div class="progress-wrap">
 									<h3>Python<span class="pull-right">Competent</span></h3>
 									<div class="progress">
@@ -253,7 +253,7 @@ Slide show for projects?
 								</div>
 							</div>
 
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="col-md-6 wow fadeInLeft">
 								<div class="progress-wrap">
 									<h3>C#<span class="pull-right">Competent</span></h3>
 									<div class="progress">
@@ -264,7 +264,7 @@ Slide show for projects?
 								</div>
 							</div>
 
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="col-md-6 wow fadeInRight">
 								<div class="progress-wrap">
 									<h3>Arduino<span class="pull-right">Competent</span></h3>
 									<div class="progress">
@@ -275,7 +275,7 @@ Slide show for projects?
 								</div>
 							</div>
 
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="col-md-6 wow fadeInLeft">
 								<div class="progress-wrap">
 									<h3>Swift<span class="pull-right">Competent</span></h3>
 									<div class="progress">
@@ -286,7 +286,7 @@ Slide show for projects?
 								</div>
 							</div>
 
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="col-md-6 wow fadeInRight">
 								<div class="progress-wrap">
 									<h3>JavaScript<span class="pull-right">Competent</span></h3>
 									<div class="progress">
@@ -297,7 +297,7 @@ Slide show for projects?
 								</div>
 							</div>
 
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="col-md-6 wow fadeInLeft">
 								<div class="progress-wrap">
 									<h3>C<span class="pull-right">Competent</span></h3>
 									<div class="progress">
@@ -310,7 +310,7 @@ Slide show for projects?
 
 							<!--Familiar-->
 
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="col-md-6 wow fadeInRight">
 								<div class="progress-wrap">
 									<h3>Elm<span class="pull-right">Familiar</span></h3>
 									<div class="progress">
@@ -321,7 +321,7 @@ Slide show for projects?
 								</div>
 							</div>
 
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="col-md-6 wow fadeInLeft">
 								<div class="progress-wrap">
 									<h3>LaTeX<span class="pull-right">Familiar</span></h3>
 									<div class="progress">
@@ -332,7 +332,7 @@ Slide show for projects?
 								</div>
 							</div>
 
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="col-md-6 wow fadeInRight">
 								<div class="progress-wrap">
 									<h3>MATLAB<span class="pull-right">Familiar</span></h3>
 									<div class="progress">
@@ -343,7 +343,7 @@ Slide show for projects?
 								</div>
 							</div>
 
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="col-md-6 wow fadeInLeft">
 								<div class="progress-wrap">
 									<h3>JavaDB<span class="pull-right">Familiar</span></h3>
 									<div class="progress">
@@ -354,7 +354,7 @@ Slide show for projects?
 								</div>
 							</div>
 
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="col-md-6 wow fadeInRight">
 								<div class="progress-wrap">
 									<h3>SQL<span class="pull-right">Familiar</span></h3>
 									<div class="progress">
@@ -481,7 +481,7 @@ Slide show for projects?
 					<br>
 					<h4>Other Tools</h4>
 					<div class="container">
-						<div class="row">
+						<div class="row wow bounceInUp">
 							<div class="card col-xs-12 col-sm-5 col-md-4 col-lg-2">
 								<div class="card-block">
 									<h3 class="card-title">Git</h3>
@@ -549,7 +549,7 @@ Slide show for projects?
 					<h2>EDUCATION</h2>
 					<div class="row">
 						<div class="timeline-centered">
-							<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+							<article class="timeline-entry wow fadeInUp">
 								<div class="timeline-entry-inner">
 									<div class="timeline-icon color-1">
 										<i class="fas fa-graduation-cap"></i>
@@ -557,7 +557,8 @@ Slide show for projects?
 									<div class="timeline-label">
 										<h2>Bachelor of Engineering Science, Software Engineering <span
 												class="pull-right">Sept 2017 - April 2021</span></h2>
-										<p style="margin-bottom: 5px">Awards:</p>
+										<div class = "wow flipInX slow">
+												<p style="margin-bottom: 5px">Awards:</p>
 										<ul>
 											<li>Dean's Honor List (2018, 2019)</li>
 											<li>TD Scholarship for Engineering (2017)</li>
@@ -581,11 +582,12 @@ Slide show for projects?
 												</li>
 											</ul>
 										</div>
+										</div>
 									</div>
 								</div>
 							</article>
 
-							<article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+							<article class="timeline-entry wow fadeInUp">
 								<div class="timeline-entry-inner">
 									<div class="timeline-icon color-2">
 										<i class="fas fa-graduation-cap"></i>
@@ -593,7 +595,8 @@ Slide show for projects?
 									<div class="timeline-label">
 										<h2>Ontario Secondary School Diploma<span class="pull-right">Sept
 												2013 - June 2017</span></h2>
-										<p style="margin-bottom: 5px">Awards:</p>
+										<div class = "wow flipInX slow">
+												<p style="margin-bottom: 5px">Awards:</p>
 										<ul>
 											<li>Honour Roll (2014, 2015,2016)</li>
 										</ul>
@@ -615,11 +618,12 @@ Slide show for projects?
 												</li>
 											</ul>
 										</div>
+										</div>
 									</div>
 								</div>
 							</article>
 
-							<article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+							<article class="timeline-entry begin wow fadeInUp">
 								<div class="timeline-entry-inner">
 									<div class="timeline-icon color-none">
 									</div>
@@ -634,7 +638,7 @@ Slide show for projects?
 					<h3>WORK EXPERIENCE</h3>
 					<div class="row">
 						<div class="timeline-centered">
-							<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+							<article class="timeline-entry wow fadeInUp">
 								<div class="timeline-entry-inner">
 									<div class="timeline-icon color-1">
 										<i class="fas fa-briefcase"></i>
@@ -663,7 +667,7 @@ Slide show for projects?
 								</div>
 							</article>
 
-							<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+							<article class="timeline-entry wow fadeInUp">
 								<div class="timeline-entry-inner">
 									<div class="timeline-icon color-2">
 										<i class="fas fa-briefcase"></i>
@@ -691,7 +695,8 @@ Slide show for projects?
 									</div>
 								</div>
 							</article>
-							<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+
+							<article class="timeline-entry wow fadeInUp">
 								<div class="timeline-entry-inner">
 									<div class="timeline-icon color-3">
 										<i class="fas fa-briefcase"></i>
@@ -717,7 +722,7 @@ Slide show for projects?
 								</div>
 							</article>
 
-							<article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+							<article class="timeline-entry begin wow fadeInUp">
 								<div class="timeline-entry-inner">
 									<div class="timeline-icon color-none">
 									</div>
@@ -732,8 +737,8 @@ Slide show for projects?
 					<h3>FEATURED PROJECTS</h3>
 					<br>
 
-					<div class="row">
-						<div class="col-md-6 col-lg-4 animate-box" data-animate-effect="fadeInLeft">
+					<div class="row wow fadeInUp">
+						<div class="col-md-6 col-lg-4 wow fadeInUp">
 							<div class="project"
 								style=" background-image: url(images/driveAlertNamed.png); border-radius: 5%;"
 								href="https://github.com/hadeelelmadhoon/DriveAlert" target="_blank">
@@ -762,7 +767,7 @@ Slide show for projects?
 							</div>
 						</div>
 
-						<div class="col-md-6 col-lg-4 animate-box" data-animate-effect="fadeInLeft">
+						<div class="col-md-6 col-lg-4 wow fadeInUp">
 							<div class="project"
 								style=" background-image: url(images/YAPShooterNamed.png); border-radius: 5%;"
 								href="https://github.com/irfanyusra/YAP-Shooter" target="_blank">
@@ -788,7 +793,7 @@ Slide show for projects?
 							</div>
 						</div>
 
-						<div class="col-md-6 col-lg-4 animate-box" data-animate-effect="fadeInLeft">
+						<div class="col-md-6 col-lg-4 wow fadeInUp">
 							<div class="project"
 								style=" background-image: url(images/itravel2Named.png); border-radius: 5%;"
 								href="https://github.com/irfanyusra/iTravel" target="_blank">
@@ -811,7 +816,7 @@ Slide show for projects?
 							</div>
 						</div>
 
-						<div class="col-md-6 col-lg-4 animate-box" data-animate-effect="fadeInLeft">
+						<div class="col-md-6 col-lg-4 wow fadeInUp">
 							<div class="project"
 								style=" background-image: url(images/GetRollin.png); border-radius: 5%;"
 								href="https://github.com/irfanyusra" target="_blank">
@@ -975,7 +980,7 @@ Slide show for projects?
 					<h3>EXTRA-CURRICULARS</h3>
 					<div class="row">
 						<div class="timeline-centered">
-							<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+							<article class="timeline-entry wow fadeInUp">
 								<div class="timeline-entry-inner">
 									<div class="timeline-icon color-1">
 										<i class="fas fa-hands-helping"></i>
@@ -996,7 +1001,7 @@ Slide show for projects?
 								</div>
 							</article>
 
-							<article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+							<article class="timeline-entry wow fadeInUp">
 								<div class="timeline-entry-inner">
 									<div class="timeline-icon color-2">
 										<i class="fas fa-chalkboard-teacher"></i>
@@ -1027,7 +1032,7 @@ Slide show for projects?
 								</div>
 							</article>
 
-							<article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+							<article class="timeline-entry wow fadeInUp">
 								<div class="timeline-entry-inner">
 									<div class="timeline-icon color-3">
 										<i class="fas fa-robot"></i>
@@ -1050,7 +1055,7 @@ Slide show for projects?
 								</div>
 							</article>
 
-							<article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+							<article class="timeline-entry wow fadeInUp">
 								<div class="timeline-entry-inner">
 									<div class="timeline-icon color-none">
 									</div>
@@ -1065,7 +1070,7 @@ Slide show for projects?
 					<h3>PUBLICATIONS</h3>
 					<div class="row">
 						<div class="timeline-centered">
-							<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+							<article class="timeline-entry wow fadeInUp">
 								<div class="timeline-entry-inner">
 									<div class="timeline-icon color-1">
 										<i class="fas fa-chart-bar"></i>
@@ -1078,7 +1083,7 @@ Slide show for projects?
 								</div>
 							</article>
 
-							<article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+							<article class="timeline-entry wow fadeInUp">
 								<div class="timeline-entry-inner">
 									<div class="timeline-icon color-2">
 										<i class="fas fa-chart-bar"></i>
@@ -1094,7 +1099,7 @@ Slide show for projects?
 								</div>
 							</article>
 
-							<article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+							<article class="timeline-entry wow fadeInUp">
 								<div class="timeline-entry-inner">
 									<div class="timeline-icon color-3">
 										<i class="fas fa-chart-bar"></i>
@@ -1114,7 +1119,7 @@ Slide show for projects?
 								</div>
 							</article>
 
-							<article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+							<article class="timeline-entry begin wow fadeInUp">
 								<div class="timeline-entry-inner">
 									<div class="timeline-icon color-none">
 									</div>
@@ -1129,7 +1134,7 @@ Slide show for projects?
 					<h3>ACHIEVEMENTS</h3>
 					<div class="row">
 						<div class="timeline-centered">
-							<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+							<article class="timeline-entry wow fadeInUp">
 								<div class="timeline-entry-inner">
 									<div class="timeline-icon color-1">
 										<i class="fas fa-trophy"></i>
@@ -1143,7 +1148,7 @@ Slide show for projects?
 								</div>
 							</article>
 
-							<article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+							<article class="timeline-entry wow fadeInUp">
 								<div class="timeline-entry-inner">
 
 									<div class="timeline-icon color-2">
@@ -1161,7 +1166,7 @@ Slide show for projects?
 								</div>
 							</article>
 
-							<article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+							<article class="timeline-entry wow fadeInUp">
 								<div class="timeline-entry-inner">
 									<div class="timeline-icon color-2">
 										<i class="fas fa-trophy"></i>
@@ -1186,7 +1191,7 @@ Slide show for projects?
 								</div>
 							</article>
 
-							<article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+							<article class="timeline-entry wow fadeInUp">
 								<div class="timeline-entry-inner">
 									<div class="timeline-icon color-3">
 										<i class="fas fa-trophy"></i>
@@ -1199,7 +1204,7 @@ Slide show for projects?
 								</div>
 							</article>
 
-							<article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+							<article class="timeline-entry wow fadeInUp">
 								<div class="timeline-entry-inner">
 									<div class="timeline-icon color-4">
 										<i class="fas fa-trophy"></i>
@@ -1212,7 +1217,7 @@ Slide show for projects?
 								</div>
 							</article>
 
-							<article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+							<article class="timeline-entry wow fadeInUp">
 								<div class="timeline-entry-inner">
 									<div class="timeline-icon color-2">
 										<i class="fas fa-trophy"></i>
@@ -1228,7 +1233,7 @@ Slide show for projects?
 								</div>
 							</article>
 
-							<article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+							<article class="timeline-entry begin wow fadeInUp">
 								<div class="timeline-entry-inner">
 									<div class="timeline-icon color-none">
 									</div>
@@ -1308,7 +1313,7 @@ Slide show for projects?
 			document.getElementById("sidebar").style.width = "250px";
 			document.getElementById("page").style.width = "calc(100% - 250px)";
 			document.getElementById("content").style.paddingLeft = "0px";
-			// document.getElementById("toggleBtn").style.color = "#e9ecef";
+			//  document.getElementById("toggleBtn").style.color = "#e9ecef";
 			document.getElementById("toggleBtn").style.color = "white";
 			
 			document.getElementById("toggleBtn").style.position = "sticky";
@@ -1325,6 +1330,54 @@ Slide show for projects?
 		}
 
 	</script>
+	<!-- 
+	<script>
+	// Cache selectors
+		var lastId,
+			topMenu = $("list-unstyled"),
+			topMenuHeight = topMenu.outerHeight() + 15,
+			// All list items
+			menuItems = topMenu.find("a"),
+			// Anchors corresponding to menu items
+			scrollItems = menuItems.map(function () {
+				var item = $($(this).attr("href"));
+				if (item.length) { return item; }
+			});
+
+		// Bind click handler to menu items
+		// so we can get a fancy scroll animation
+		menuItems.click(function (e) {
+			var href = $(this).attr("href"),
+				offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
+			$('html, body').stop().animate({
+				scrollTop: offsetTop
+			}, 300);
+			e.preventDefault();
+		});
+
+		// Bind to scroll
+		$(window).scroll(function () {
+			// Get container scroll position
+			var fromTop = $(this).scrollTop() + topMenuHeight;
+
+			// Get id of current scroll item
+			var cur = scrollItems.map(function () {
+				if ($(this).offset().top < fromTop)
+					return this;
+			});
+			// Get the id of the current element
+			cur = cur[cur.length - 1];
+			var id = cur && cur.length ? cur[0].id : "";
+
+			if (lastId !== id) {
+				lastId = id;
+				// Set/remove active class
+				menuItems
+					.parent().removeClass("active")
+					.end().filter("[href='#" + id + "']").parent().addClass("active");
+			}
+		});
+		</script> -->
 </body>
 <!--forgot to make it dissapear-->
 
