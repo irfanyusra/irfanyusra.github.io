@@ -1,0 +1,424 @@
+
+/* @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"; */
+
+p{
+   /* font-family: "Quicksand", Arial, sans-serif;  */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#page {
+    /* width: calc(100% - 250px); */
+    padding: 30px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* background: rgb(220, 174, 210) */
+}
+
+.icons{
+    position: relative;
+    left: 10px;
+    top: 28.5%;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+    color: #383838;
+}
+
+.icon:active, .icon1:hover, .icon:hover{
+    /* color: #383838; */
+    color: #4f81bd;
+}
+
+
+.project {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 300px;
+  width: 100%;
+  display: block;
+  margin-bottom: 30px; 
+ 
+}
+  .project .desc {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* background: #7386D5; */
+    background: #4f81bd;
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 5%;
+ }
+    .project .desc .con {
+      padding: 20px;
+      display: block;
+      position: relative;
+      height: 300px; 
+    }
+      .project .desc .con .icon {
+        position: absolute;
+        bottom: 0px;
+        left: 20px;
+        right: 20px; 
+    }
+          .project .desc .con .icon span a {
+            color: #333333;
+            padding: 5px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 4px; }
+       
+    .project .desc h3 {
+      font-family: "Quicksand", Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      /* text-transform: uppercase; */
+      letter-spacing: 1px;
+        transition: transform 0.3s, opacity 0.3s;
+      transform: translate3d(0, -15px, 0);
+      margin-bottom: 15px; 
+    }
+      .project .desc h3 a {
+        color: #fff; }
+    .project .desc span {
+      display: block;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 13px;
+      -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+      -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+      transition: opacity 0.3s, -webkit-transform 0.3s;
+      -o-transition: transform 0.3s, opacity 0.3s;
+      transition: transform 0.3s, opacity 0.3s;
+      transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+      -webkit-transform: translate3d(0, 15px, 0);
+      transform: translate3d(0, 15px, 0); }
+      .project .desc span a {
+        color: #000; }
+    @media screen and (max-width: 768px) {
+      .project .desc {
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.4); }
+        .project .desc h3 {
+          font-style: 28px;
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+          color: #000; }
+        .project .desc span {
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0); } }
+  .project:hover .desc {
+    opacity: 1; }
+    .project:hover .desc h3 {
+      transform: translate3d(0, 0, 0); }
+    .project:hover .desc span {
+       transform: translate3d(0, 0, 0); }
+
+       
+.projects-container{
+    padding: 30px 6%;
+}
+
+#projects{
+    position: relative;
+    padding-top: 60px;
+}
+
+.project-box{
+    padding: 1%;
+    margin: 30px 4%;
+    text-align: center;
+}
+
+.project-image{
+    /* border-radius: 5%; */
+    max-width: 10em;
+    display: block;
+    margin: 0 auto;
+}
+
+.project-title{
+    margin: 10% auto 4%;
+}
+
+
+
+.box-shadow,
+.paralax-mf,
+.service-box,
+.work-box,
+
+.card-blog {
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/*======================================
+//--//-->   PORTFOLIO
+======================================*/
+
+.work-box {
+  margin-bottom: 3rem;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: #fff;
+}
+
+.project1 .work-box:hover img {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.work-img {
+  display: block;
+  overflow: hidden;
+}
+
+.work-img img {
+  transition: all 1s;
+}
+
+.work-content {
+  padding: 1rem 3% 1rem 4%;
+}
+
+.work-content .w-more {
+  color: #4e4e4e;
+  font-size: .8rem;
+}
+
+.work-content .w-more .w-ctegory {
+  color: #420042;
+}
+
+.work-content .w-like {
+  font-size: 2.5rem;
+  color: #420042;
+  float: right;
+}
+
+.work-content .w-like a {
+  color: #420042;
+}
+
+.work-content .w-like .num-like {
+  font-size: .7rem;
+}
+
+.w-title {
+  font-size: 1.2rem;
+}
+
+
+
+.project1 {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  
+    
+    max-width: 10em;
+     max-height: 10em;
+    display: block;
+    margin: 0 auto;
+  display: block;
+  margin-bottom: 10px; 
+   border-radius: 15%;
+}
+  .project1 .desc {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(240, 3, 3);
+    opacity: 0;
+     border-radius: 15%;
+    transition: 0.3s;
+ }
+    .project1 .desc .con {
+      padding: 20px;
+      display: block;
+      position: relative;
+      
+      height:10em; 
+    }
+      .project1 .desc .con .icon {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        right: 20px; 
+    }
+          .project1 .desc .con .icon span a {
+            color: #333333;
+            padding: 5px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 4px; }
+       
+    .project1 .desc h3 {
+      font-family: "Quicksand", Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+        transition: transform 0.3s, opacity 0.3s;
+      transform: translate3d(0, -15px, 0);
+      margin-bottom: 15px; 
+    }
+      .project1 .desc h3 a {
+        color: #fff; }
+    .project1 .desc span {
+      display: block;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 13px;
+      -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+      -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+      transition: opacity 0.3s, -webkit-transform 0.3s;
+      -o-transition: transform 0.3s, opacity 0.3s;
+      transition: transform 0.3s, opacity 0.3s;
+      transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+      -webkit-transform: translate3d(0, 15px, 0);
+      transform: translate3d(0, 15px, 0); } 
+      .project1 .desc span a {
+        color: #000; }
+    @media screen and (max-width: 768px) {
+      .project1 .desc {
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.4); }
+        .project1 .desc h3 {
+          font-style: 28px;
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+          color: #000; }
+        .project1 .desc span {
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0); } }
+  .project1:hover .desc,.project-box {
+    opacity: 1; }
+    .project1:hover .desc h3 {
+      transform: translate3d(0, 0, 0); }
+    .project1:hover .desc span {
+       transform: translate3d(0, 0, 0); }
+
+
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+
+
+
+.project2 {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+    display: block;
+    margin: 0 auto;
+  display: block;
+  margin-bottom: 10px; 
+}
+  .project2 .desc {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: 0.3s;
+ }
+    .project2 .desc .con {
+      padding: 20px;
+      display: block;
+      position: relative; 
+      height:10em; 
+    }
+      .project2 .desc .con .icon {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        right: 20px; 
+    }
+          .project2 .desc .con .icon span a {
+            color: #333333;
+            padding: 5px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 4px; }
+       
+    .project2 .desc h3 {
+      font-family: "Quicksand", Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+        transition: transform 0.3s, opacity 0.3s;
+      transform: translate3d(0, -15px, 0);
+      margin-bottom: 15px; 
+    }
+      .project2 .desc h3 a {
+        color: #fff; }
+       
+
+         
+         .project2:hover .desc {
+    opacity: 1; }
+    .project2:hover .desc {
+    opacity: 1; }
+    .project2:hover .desc h3,  .project2:hover {
+      transform: translate3d(0, 0, 0); }
+    .project2:hover .desc span,  .project2:hover {
+       transform: translate3d(0, 0, 0); } 
+
+
+
+    .project .desc span {
+      display: block;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 13px;
+      -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+      -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+      transition: opacity 0.3s, -webkit-transform 0.3s;
+      -o-transition: transform 0.3s, opacity 0.3s;
+      transition: transform 0.3s, opacity 0.3s;
+      transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+      -webkit-transform: translate3d(0, 15px, 0);
+      transform: translate3d(0, 15px, 0); }
+      .project .desc span a {
+        color: #000; }
+     @media screen and (max-width: 768px) {
+      .project .desc {
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.4); }
+        .project .desc h3 {
+          font-style: 28px;
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+          color: #000; }
+        .project .desc span {
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0); } } 
+
+
+         
+      
