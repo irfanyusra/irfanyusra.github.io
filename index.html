@@ -71,21 +71,21 @@ Slide show for projects?
 					at <b>Western University</b> </h10>
 			</div>
 
-			<ul class="list-unstyled components">
+			<ul class="navigation list-unstyled components">
 
 				<li> <a href="#home">Home</a></li>
 				<li> <a href="#about">About</a> </li>
-				<li>
+				<!-- <li> -->
 					<!-- <a href="#skills">Skills</a>  -->
-					<a href="#skillsSubmenu" data-toggle="collapse" aria-expanded="false"
+					<!-- <a href="#skillsSubmenu" data-toggle="collapse" aria-expanded="false"
 						class="dropdown-toggle">SKILLS</a>
-					<ul class="collapse list-unstyled" id="skillsSubmenu">
+					<ul class="collapse list-unstyled" id="skillsSubmenu"> -->
 						<li><a href="#skills">Programming Languages</a> </li>
 						<!-- <li> <a href="#ides">IDEs</a></li>
 						<li> <a href="#systems">Systems</a></li> -->
 						<li> <a href="#tools">Other Tools</a></li>
-					</ul>
-				</li>
+					<!-- </ul>
+				</li> -->
 				<li> <a href="#education">Education</a> </li>
 				<li> <a href="#workExperience">Work Experience</a> </li>
 				<li>
@@ -133,7 +133,7 @@ Slide show for projects?
 					onclick="openNav()">&#9776;</span> <!-- background: #e9ecef; -->
 			</div>
 			<div id="content" > <!-- /* #e9ecef;"> */ --> <!-- style="background: rgb(222,237,236) ; " --> <!-- style="background: rgb(222,237,236) ; -->
-				<section id="home">
+				<section id="home" class="page-section">
 					<div class="jumbotron jumbotron-fluid text-center">
  						<div class="container">
 							<h1 class="display-1">Hello! I am Yusra Irfan</h1>
@@ -160,7 +160,7 @@ Slide show for projects?
 					</div>
 				</section>
 
-				<section id="about" style="padding-top: 10px">
+				<section class="page-section" id="about" style="padding-top: 10px">
 					<h2>ABOUT</h2>
 					<p>
 						I am an enthusiastic candidate for Bachelor of Engineering Science who admires Technology. I am specializing in Software
@@ -172,14 +172,52 @@ Slide show for projects?
 					</p>
 				</section>
 
-				<div class="line"></div>
+				<div class="page-section line"></div>
 				<section id="skills">
 					<h2>SKILLS</h2>
 					<br>
 					<h4>Programming Languages</h4>
+					
+					<!-- <div class="container">
+						<div class="progress" style="height:30px;">
+							<div class="progress-bar" style="width:80%;height:30px;text-align: left; padding-left: 10px;">
+							Java</div>
+						</div>
+					</div> -->
+					<!-- <div id="about-splash-page">
+						
+						<ul>
+							<li style=" clear: both;background-color: #4f81bd;height: 35px;
+
+    width: 90%;">Node.js, Ruby, C#, PHP, Javascript, mySQL, MS SQL, MongoDB
+</li>
+							<li>
+								<div id="about-bar-1" style="display: none; width: 0px; color: black">
+									<h1>Node.js, Ruby, C#, PHP, Javascript, mySQL, MS SQL, MongoDB</h1>
+								</div>
+							</li>
+							<li>
+								<div id="about-bar-2" style="display: none; width: 0px;">
+									<h1>Angular, React, Backbone.js, HTML/CSS</h1>
+								</div>
+							</li>
+							<li>
+								<div id="about-bar-3" style="display: none; width: 0px;">
+									<h1>React Native, Swift, Objective-C, Java</h1>
+								</div>
+							</li>
+							<li>
+								<div id="about-bar-4" style="display: none; width: 0px;">
+									<h1>Android, iOS</h1>
+								</div>
+							</li>
+						</ul>
+						
+					</div> -->
 					<div class="skill-mf">
 						<div class="row">
-							<!-- Proficient -->
+							
+							
 							<div class="col-md-6 wow fadeInLeft">
 								<div class="progress-wrap">
 									<h3>Java<span class="pull-right">Proficient</span></h3>
@@ -202,7 +240,7 @@ Slide show for projects?
 								</div>
 							</div>
 
-							<!--Competent-->
+							
 							<div class="col-md-6 wow fadeInLeft" >
 								<div class="progress-wrap">
 									<h3>Haskell<span class="pull-right">Competent</span></h3>
@@ -302,7 +340,7 @@ Slide show for projects?
 								</div>
 							</div>
 
-							<!--Familiar-->
+							
 
 							<div class="col-md-6 wow fadeInRight">
 								<div class="progress-wrap">
@@ -363,7 +401,7 @@ Slide show for projects?
 				</section>
 
 <!-- 
-				<section id="otherSkills">
+				<section id="otherSkills"  class="page-section">
 					<div class="row">
 
 						<div class="col-md-3 animate-box"id="ides" data-animate-effect="fadeInLeft" >
@@ -447,7 +485,7 @@ Slide show for projects?
 					</div> -->
 				<!-- </section> -->
 
-				<!-- <section id="systems">
+				<!-- <section id="systems"  class="page-section">
 					<br>
 					<h4>Systems</h4>
 					<div class="container">
@@ -471,7 +509,7 @@ Slide show for projects?
 					</div>
 				</section>
 			-->
-				<section id="tools">
+				<section id="tools"  class="page-section">
 					<br>
 					<h4>Other Tools</h4>
 					<div class="container">
@@ -501,7 +539,16 @@ Slide show for projects?
 									<h3 class="card-title">OnShape</h3>
 								</div>
 							</div>
-				
+				<div class="card col-xs-12 col-sm-5 col-md-4 col-lg-2">
+					<div class="card-block">
+						<h3 class="card-title">Unit Testing</h3>
+					</div>
+				</div>
+				<div class="card col-xs-12 col-sm-5 col-md-4 col-lg-2">
+					<div class="card-block">
+						<h3 class="card-title">UML Diagrams</h3>
+					</div>
+				</div>
 						</div>
 					</div>
 <!-- 
@@ -538,7 +585,7 @@ Slide show for projects?
 					
 				</section> 
 
-				<div class="line"></div>
+				<div class="page-section line"></div>
 				<section id="education">
 					<h2>EDUCATION</h2>
 					<div class="row">
@@ -627,7 +674,7 @@ Slide show for projects?
 					</div>
 				</section>
 
-				<div class="line"></div>
+				<div class="page-section line"></div>
 				<section id="workExperience">
 					<h3>WORK EXPERIENCE</h3>
 					<div class="row">
@@ -726,7 +773,7 @@ Slide show for projects?
 					</div>
 				</section>
 
-				<div class="line"></div>
+				<div class="page-section line"></div>
 				<section id="featProjects">
 					<h3>FEATURED PROJECTS</h3>
 					<br>
@@ -857,7 +904,7 @@ Slide show for projects?
 					</div>
 				</section>
 
-				<div class="line"></div>
+				<div class="page-section line"></div>
 				<section id="extraC">
 					<h3>EXTRA-CURRICULARS</h3>
 					<div class="row">
@@ -947,7 +994,7 @@ Slide show for projects?
 					</div>
 				</section>
 
-				<div class="line"></div>
+				<div class="page-section line"></div>
 				<section id="publications">
 					<h3>PUBLICATIONS</h3>
 					<div class="row">
@@ -1012,7 +1059,7 @@ Slide show for projects?
 					</div>
 				</section>
 
-				<div class="line"></div>
+				<div class="page-section line"></div>
 				<section id="achievements">
 					<h3>ACHIEVEMENTS</h3>
 					<div class="row">
@@ -1125,7 +1172,7 @@ Slide show for projects?
 						</div>
 					</div>
 				</section>
-<div class="line"></div>
+				<div class="line"></div>
 				<section>
 					<footer>
 						<div class="jumbotron jumbotron-fluid text-center"
@@ -1213,6 +1260,40 @@ Slide show for projects?
 		}
 
 	</script>
+
+<script>
+		// $(document).ready(function () {
+		// 	$('a[href*=#]').bind('click', function (e) {
+		// 		e.preventDefault(); // prevent hard jump, the default behavior
+
+		// 		var target = $(this).attr("href"); // Set the target as variable
+
+		// 		// perform animated scrolling by getting top-position of target-element and set it as scroll target
+		// 		$('html, body').stop().animate({
+		// 			scrollTop: $(target).offset().top
+		// 		}, 600, function () {
+		// 			location.hash = target; //attach the hash (#jumptarget) to the pageurl
+		// 		});
+
+		// 		return false;
+		// 	});
+		// });
+
+		$(window).scroll(function () {
+			var scrollDistance = $(window).scrollTop();
+
+			// Assign active class to nav links while scolling
+			$('.page-section').each(function (i) {
+				if ($(this).position().top <= scrollDistance) {
+					$('.navigation a.active').removeClass('active');
+					$('.navigation a').eq(i).addClass('active');
+				}
+			});
+		}).scroll();
+		
+</script>
+
+	
 	</body>
 
 </html>
