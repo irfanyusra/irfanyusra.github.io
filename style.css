@@ -173,7 +173,7 @@ padding: 30px;
         display: none;
     }
      #content{
-        padding-left: 30px;
+        padding-left: 0px;
     }
      #content.active{
         padding-left: 0px;
