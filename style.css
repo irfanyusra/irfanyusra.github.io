@@ -594,8 +594,10 @@ footer .copyright {
 }
 
 
-
-
+/* ===================== Achievements Link */
+.achievements-links {
+  text-decoration: underline;
+}
 
 
 /*about splash*/
