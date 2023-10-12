@@ -165,7 +165,7 @@ padding: 30px;
     width: 100%;
     height: 100%;
     opacity: 0.3;
-    background-image: url('https://assets.digitalocean.com/labs/images/community_bg.png');
+    background-image: url('images/background.png');
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;
@@ -414,6 +414,7 @@ padding: 30px;
     -webkit-background-clip: padding-box;
     -moz-background-clip: padding;
     background-clip: padding-box; 
+    width: 90%;
 }
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label:after {
@@ -448,8 +449,23 @@ padding: 30px;
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 span {
   opacity: .7;
-  font-size: 16px; }
+  font-size: 16px; 
+}
 
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h3 {
+    font-size: 20px;
+    font-family: "Quicksand", Arial, sans-serif;
+    font-weight: 500;
+    color: #4f81bd;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h3 a {
+    color: #4f81bd;
+}
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h3 span {
+    opacity: .7;
+    font-size: 14px;
+}
   .ico-circle {
   height: 40px;
   width: 40px;
